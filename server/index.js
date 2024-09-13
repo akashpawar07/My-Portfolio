@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }))
 //cors middleware to communicate cross platfrom port
 app.use(cors())
 
-// Database URL fro connecting db
+// Database URL 
 const db_connection = require('./db/databse.js')
 
 const contactModel = require('./models/contactModel.js')
