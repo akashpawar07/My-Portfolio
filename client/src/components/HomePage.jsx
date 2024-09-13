@@ -42,7 +42,7 @@ function HomePage(props) {
                             <button 
                             className='active:bg-blue-800 font-semibold bg-blue-600 gap-2 rounded-md md:w-[25%] w-[35%] flex items-center justify-center text-gray-30 px-3 py-1'>
                                 <a href={MyResume}download='akash-resume' className='flex gap-2'>
-                                <p className='mt-[2px]'>Resume</p> <span className='mt-1 text-[20px]'><FaArrowAltCircleDown /></span></a>
+                                <p className=''>Resume</p> <span className='mt-1 text-[20px]'><FaArrowAltCircleDown /></span></a>
                             </button>
                            
                         </div>
