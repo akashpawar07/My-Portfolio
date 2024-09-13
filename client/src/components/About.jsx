@@ -43,7 +43,7 @@ function About() {
         <div className='bg-[#003ecb] p-1 w-[99%] md:w-[40%] md:h-[99vh] h-[70vh] flex flex-col text-center items-center overflow-hidden'>
           <img src={HiteshChoudhary} alt="hitesh choudhary" className='h-[280px] w-[280px] mt-2 rounded-full' />
           <div className='mt-4 text-white h-[100px] md:w-[70%] w-[90%] '>
-            <p className='md:text-[29px] text-[32px] text-gray-300 dark:text-neutral-100'>I am happy to know you that 2 Projects deployed sucessfully! and more under Development</p>
+            <p className='md:text-[29px] text-[32px] text-gray-300 dark:text-neutral-100'>I am happy to know you that 2+ Projects deployed sucessfully! </p>
           </div>
         </div>
 
@@ -168,7 +168,7 @@ function About() {
             <div className='h-[190px] px-2 py-2 flex flex-col items-center justify-evenly overflow-y-auto  no-scrollbar scroll-smooth'>
               <p className='text-[15px] md:text-[14px]'>
 
-                I use Mongodb, <br />MongoDB is a document-oriented database that offers a flexible schema, scalable architecture, high performance, and rich query capabilities, making it ideal for big data, content management, and real-time analytics use cases, with features like data replication, and robust security, all managed through a intuitive GUI like MongoDB Compass, providing a powerful solution for modern application development."
+                I use Mongodb, because<br />MongoDB is a document-oriented database that offers a flexible schema, scalable architecture, high performance, and rich query capabilities, making it ideal for big data, content management, and real-time analytics use cases, with features like data replication, and robust security, all managed through a intuitive GUI like MongoDB Compass, providing a powerful solution for modern application development."
 
               </p>
             </div>
@@ -181,7 +181,7 @@ function About() {
             </div>
             <div className='h-[190px] px-2 py-2 flex flex-col items-center justify-evenly overflow-y-auto  no-scrollbar scroll-smooth'>
               <p className='text-[15px] md:text-[14px]'>
-                People use GitHub for many reasons, including: <br />
+                I use GitHub for many reasons, including: <br />
                 Version control: GitHub makes it easy to track changes and navigate revisions to code.
                 Open source: GitHub is used by almost every open-source project to manage its code.
                 Learning: GitHub is a robust platform for learning and expanding your programming knowledge.

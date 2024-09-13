@@ -29,17 +29,28 @@ function Contact() {
       const response = await fetch('http://localhost:8080/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'Application/json'
+          'Content-Type': 'application/json'
         },
         body: JSON.stringify(values)
       })
       console.log(values);
-      const data = await response.json();
-      console.log(data);
+      try {
+        const data = await response.json();
+        console.log(data);
+      } catch (error) {
+        console.error('Error:', error);
+      }
     }
+    
+
+    
+    
+    
 
   })
   console.log(errors)
+
+  
 
 
 

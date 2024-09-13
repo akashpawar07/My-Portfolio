@@ -2,7 +2,8 @@ import React, { createElement, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import ImageSlider from './ImageSlider';
-import MyResume from '../assets/resume.pdf'
+import MyResume from '../assets/done.jpg'
+import { FaArrowAltCircleDown } from "react-icons/fa";
 
 
 let model = 'https://img.freepik.com/free-photo/full-shot-man-suit-working-stairs_23-2148230807.jpg?ga=GA1.1.919035732.1724917926&semt=ais_hybrid';
@@ -39,7 +40,9 @@ function HomePage(props) {
                         </p>
                         <div className='flex flex-col md:items-start gap-2 text-slate-50 '>
                             <button 
-                            className='active:bg-blue-800 font-semibold bg-blue-600 gap-2 rounded-md md:w-[25%] w-[35%] flex items-center justify-center text-gray-30 px-3 py-2'><a href={MyResume} download='akash-resume'>Resume <span><ion-icon name="download-outline"></ion-icon></span></a>
+                            className='active:bg-blue-800 font-semibold bg-blue-600 gap-2 rounded-md md:w-[25%] w-[35%] flex items-center justify-center text-gray-30 px-3 py-1'>
+                                <a href={MyResume}download='akash-resume' className='flex gap-2'>
+                                <p className='mt-[2px]'>Resume</p> <span className='mt-1 text-[20px]'><FaArrowAltCircleDown /></span></a>
                             </button>
                            
                         </div>

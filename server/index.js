@@ -8,10 +8,17 @@ const PORT = process.env.PORT || 7070;
 
 app.use(express.static('dist'))
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }))
 
 //cors middleware to communicate cross platfrom port
-app.use(cors())
+app.use(cors({
+    origin: ['http://localhost:5173', '(link unavailable)'], // Allow requests from these origins
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
+    allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
+    maxAge: 3600, // Set the maximum age of the CORS configuration
+    credentials: true, // Allow credentials (cookies, etc.)
+    preflightContinue: true, // Continue to the next middleware after CORS checks
+  }));
+  
 
 // Database URL 
 const db_connection = require('./db/databse.js')
@@ -20,17 +27,22 @@ const contactModel = require('./models/contactModel.js')
 const contactModels = require('./models/contactModel.js')
 
 //post method .....
-app.post('/contact', async (req, res)=>{
-    
-    details = new contactModels({
+app.post('/contact', async (req, res) => {
+    try {
+      const details = new contactModels({
         userName: req.body.username,
         userEmail: req.body.useremail,
-        userMessages:req.body.usermessage
-    })
-    const data = await details.save()
-    res.send(data)
-   console.log(data)
-})
+        userMessages: req.body.usermessage
+      });
+      const data = await details.save();
+      res.send(data);
+      console.log(data);
+    } catch (error) {
+      console.error('Error saving contact details:', error);
+      res.status(500).send('Error saving contact details');
+    }
+  });
+  
 
 
 // Sever is listening
