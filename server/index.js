@@ -11,7 +11,7 @@ app.use(express.json());
 
 //cors middleware to communicate cross platfrom port
 app.use(cors({ 
-    origin: ['http://localhost:5173', '(link unavailable)'], // Allow requests from these origins
+    origin: ['https://akashp-portfolio.netlify.app', '(link unavailable)'], // Allow requests from these origins
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
     credentials: true, // Allow credentials (cookies, etc.)
