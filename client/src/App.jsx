@@ -31,7 +31,7 @@ function App() {
     },
     {
       //contact route
-      path: "/Contact",
+      path: "/contact",
       element:
         <>
           <Navbar />
