@@ -11,7 +11,7 @@ const contactModel = new mongoose.Schema({
     },
     userMessages:{
         type: String,
-        uppercase : true
+        lowercase : true
     }
 
 },{timestamps:true})
