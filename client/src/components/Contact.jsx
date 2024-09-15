@@ -99,7 +99,7 @@ function Contact() {
                 onChange={handleChange}
                 onBlur={handleBlur}
 
-                className="shadow-sm border text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg-gray-400 dark:bg-gray-700 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" />
+                className="shadow-sm border text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-3 bg-gray-400 dark:bg-gray-700 dark:border-gray-600 placeholder-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" />
               {errors.username && touched.username ? <p className='text-red-500 text-[14px] ml-1'>{errors.username}</p> : null}
             </div>
             <div>
