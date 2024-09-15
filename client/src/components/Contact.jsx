@@ -41,19 +41,10 @@ function Contact() {
         console.error('Error:', error);
       }
     }
-    
-
-    
-    
-    
-
   })
   console.log(errors)
 
   
-
-
-
   // const child Modal
   const PopupModal = () => {
     const closeModal = () => setShowModal(false);

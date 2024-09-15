@@ -21,7 +21,7 @@ function App() {
         </>
     },
     {
-      // aboute route
+      // about route
       path: "/about",
       element:
         <>

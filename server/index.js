@@ -10,11 +10,10 @@ app.use(express.static('dist'))
 app.use(express.json());
 
 //cors middleware to communicate cross platfrom port
-app.use(cors({
+app.use(cors({ 
     origin: ['http://localhost:5173', '(link unavailable)'], // Allow requests from these origins
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow these headers
-    maxAge: 3600, // Set the maximum age of the CORS configuration
     credentials: true, // Allow credentials (cookies, etc.)
     preflightContinue: true, // Continue to the next middleware after CORS checks
   }));
