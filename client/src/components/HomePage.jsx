@@ -2,7 +2,7 @@ import React, { createElement, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import ImageSlider from './ImageSlider';
-import MyResume from '../assets/done.jpg'
+import MyResume from '../assets/updated_resume.pdf'
 import { FaArrowAltCircleDown } from "react-icons/fa";
 
 
