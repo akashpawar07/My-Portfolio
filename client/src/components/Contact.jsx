@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react'
-import * as Yup from 'yup'
 import checkBtn from '../assets/checkBtn.png'
 import { useFormik } from 'formik';
 import { formValidationSchema } from '../Schemas/validation'
@@ -51,7 +50,7 @@ function Contact() {
 
     useEffect(() => {
       document.body.style.overflowY = "hidden"
-      // document.documentElement.style = "background-color: white"
+      
       return () => {
         document.body.style.overflowY = "scroll"
       };
@@ -67,7 +66,8 @@ function Contact() {
               <h1 className='font-bold text-2xl '>Thank You !</h1>
               <div className='flex flex-col justify-between items-center gap-7 md:mt-2'>
                 <p className='text-center text-[16px]'>Thank you for reaching out, I appreciate your comment"</p>
-                <button className='p-2 mb-2 w-[50%] bg-[#2db02d] font-bold text-neutral-50 hover:bg-[#37c137] rounded-md ' onClick={closeModal}>OK</button>
+                <button className='p-2 mb-2 w-[50%] bg-[#2db02d] font-bold text-neutral-50 hover:bg-[#37c137] rounded-md' 
+                onClick={closeModal}>OK</button>
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ export const formValidationSchema = Yup.object({
         .matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/, "Please enter valid email"),
 
     usermessage: Yup.string()
-        .required("Comment field should not be empty")
+        .required("Comment field should not be empty ")
         .min(4, "Please leave a comment of atleast 4 characters")
         .trim('The comment cannot include spaces'),
 })

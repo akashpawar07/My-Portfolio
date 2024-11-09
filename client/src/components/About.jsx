@@ -48,7 +48,7 @@ function About() {
         </div>
 
         {/* cards section */}
-        <div className='md:max-h-[99vh] md:w-[55%] w-[99%] gap-3 h-auto flex md:flex-row justify-evenly md:flex-wrap flex-col md:overflow-y-auto  no-scrollbar scroll-smooth '>
+        <div className='md:max-h-[99vh] md:w-[55%] w-[99%] gap-3 h-auto flex md:flex-row justify-evenly md:flex-wrap flex-col md:overflow-y-auto no-scrollbar scroll-smooth '>
 
           {/* Java */}
           <div className='w-[99%] h-[48%] md:w-[40%] md:h-[55%] flex flex-col rounded-lg text-center items-center border-indigo-400 border-x-2 border-y-2 bg-[#d5d5d7cf] dark:bg-[#515153cf] '>

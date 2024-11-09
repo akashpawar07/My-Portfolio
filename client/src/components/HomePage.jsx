@@ -1,5 +1,4 @@
 import React, { createElement, useState } from 'react'
-import { Link } from 'react-router-dom';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import ImageSlider from './ImageSlider';
 import MyResume from '../assets/updated_resume.pdf'
@@ -8,7 +7,6 @@ import { FaArrowAltCircleDown } from "react-icons/fa";
 
 let model = 'https://img.freepik.com/free-photo/full-shot-man-suit-working-stairs_23-2148230807.jpg?ga=GA1.1.919035732.1724917926&semt=ais_hybrid';
 
-import download from '../assets/downlaod.png'
 
 function HomePage(props) {
 
